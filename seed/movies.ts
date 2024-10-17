@@ -1,4 +1,4 @@
-import {Movie} from '../shared/types'
+import {Movie, MovieCast} from '../shared/types'
 
 export const movies : Movie[] = [
   {
@@ -293,7 +293,7 @@ export const movies : Movie[] = [
     adult: false,
     backdrop_path: '/t5zCBSB5xMDKcDqe91qahCOUYVV.jpg',
     genre_ids: [ 27, 9648 ],
-    id: 507089,
+    id: 2345,
     original_language: 'en',
     original_title: "Five Nights at Freddy's",
     overview: "Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems.",
@@ -309,7 +309,7 @@ export const movies : Movie[] = [
     adult: false,
     backdrop_path: '/9jPoyxjiEYPylUIMI3Ntixf8z3M.jpg',
     genre_ids: [ 16, 12, 35, 10751 ],
-    id: 520758,
+    id: 1234,
     original_language: 'en',
     original_title: 'Chicken Run: Dawn of the Nugget',
     overview: "A band of fearless chickens flock together to save poultry-kind from an unsettling new threat: a nearby farm that's cooking up something suspicious.",
@@ -322,5 +322,32 @@ export const movies : Movie[] = [
     vote_count: 325
   }
 ]
+
+export const movieCasts: MovieCast[] = [
+  {
+    movieId: 1234,
+    actorName: "Joe Bloggs",
+    roleName: "Male Character 1",
+    roleDescription: "description of character 1",
+  },
+  {
+    movieId: 2345,
+    actorName: "Alice Broggs",
+    roleName: "Female Character 1",
+    roleDescription: "description of character 2",
+  },
+  {
+    movieId: 1234,
+    actorName: "Joe Cloggs",
+    roleName: "Male Character 2",
+    roleDescription: "description of character 3",
+  },
+  {
+    movieId: 2345,
+    actorName: "Joe Bloggs",
+    roleName: "Male Character 1",
+    roleDescription: "description of character 3",
+  },
+];
 
 
