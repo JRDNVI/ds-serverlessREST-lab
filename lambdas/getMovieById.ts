@@ -1,7 +1,13 @@
 import { APIGatewayProxyHandlerV2 } from "aws-lambda";
 
-import { DynamoDBClient, QueryCommand } from "@aws-sdk/client-dynamodb";
-import { DynamoDBDocumentClient, GetCommand, GetCommandInput, QueryCommandInput, QueryCommandOutput} from "@aws-sdk/lib-dynamodb";
+import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
+import { 
+  DynamoDBDocumentClient, 
+  GetCommand, 
+  GetCommandInput, 
+  QueryCommandInput, 
+  QueryCommandOutput, 
+  QueryCommand} from "@aws-sdk/lib-dynamodb";
 
 const ddbDocClient = createDDbDocClient();
 
